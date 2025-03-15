@@ -171,21 +171,112 @@ footer p {
   margin: 5px 0;
   font-family: 'Open Sans', sans-serif;
 }
-/* Banner Styles */
-.banner {
-  background-color: #a8e6cf; /* Sage green */
-  color: #2c3e50; /* Dark blue text */
-  text-align: center;
-  padding: 20px 0; /* More padding for a bigger banner */
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5rem; /* Larger text */
-  font-weight: 600;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1001; /* Ensure it appears above other content */
+/* ==============================
+   Color Scheme & Typography
+   ============================== */
+
+/* General body styles */
+body {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text for good contrast */
+    font-family: 'Arial', sans-serif; /* Professional font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-.banner p {
-  margin: 0; /* Remove default paragraph margin */
+/* Header styles */
+header {
+    background-color: #333; /* Dark header background */
+    color: #fff; /* White text in header */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Helvetica', sans-serif; /* More professional font for header */
+    font-size: 2em;
+}
+
+/* Links */
+a {
+    color: #4c9a2a; /* Sage green for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #3b7a1d; /* Darker sage green on hover */
+    text-decoration: underline;
+}
+
+/* Navigation menu */
+nav {
+    background-color: #333; /* Dark background for navigation */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    font-family: 'Roboto', sans-serif; /* Smooth font for navigation */
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #4c9a2a; /* Sage green on hover */
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Buttons */
+button {
+    background-color: #4c9a2a; /* Sage green button */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b7a1d; /* Darker sage green on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark footer background */
+    color: #fff; /* White footer text */
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9em;
+}
+
+/* ==============================
+   Responsive Design
+   ============================== */
+
+/* Mobile and tablet */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Slightly smaller font for mobile */
+    }
+
+    header {
+        font-size: 1.8em; /* Smaller header on mobile */
+    }
+
+    nav a {
+        font-size: 1em; /* Adjust nav font size */
+    }
+
+    button {
+        padding: 10px 15px; /* Smaller buttons on mobile */
+    }
 }
